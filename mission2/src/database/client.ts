@@ -2,7 +2,7 @@ import { Pool, type PoolConfig } from 'pg';
 
 const config: PoolConfig = {
   host: process.env.DB_HOST || 'localhost',
-  port: parseInt(process.env.DB_PORT || '5432'),
+  port: parseInt(process.env.DB_PORT || '5433'),
   database: process.env.DB_NAME || 'dev_ia_p12',
   user: process.env.DB_USER || 'postgres',
   password: process.env.DB_PASSWORD || 'postgres',
