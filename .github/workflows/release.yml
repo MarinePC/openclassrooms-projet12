@@ -1,0 +1,30 @@
+name: Publish ML Model Assets
+
+on:
+  release:
+    types: [created]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-model:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check model files exist
+        run: |
+          echo "Fichiers présents dans mission3/ :"
+          ls -lh mission3/*.pkl mission3/*.json
+
+      - name: Upload model assets to release
+        uses: softprops/action-gh-release@v3
+        with:
+          files: |
+            mission3/model.pkl
+            mission3/label_encoder.pkl
+            mission3/metrics.json
