@@ -1,0 +1,27 @@
+{
+  "model": "TF-IDF + Logistic Regression",
+  "trained_at": "2026-06-08T12:53:36.053510",
+  "dataset_rows": 383564,
+  "train_size": 306851,
+  "test_size": 76713,
+  "f1_macro": 0.6528,
+  "accuracy": 0.7941,
+  "latency_ms": 0.0909,
+  "train_duration_s": 159.8,
+  "num_classes": 13,
+  "classes": [
+    "Bank account or service",
+    "Checking or savings account",
+    "Consumer Loan",
+    "Credit card",
+    "Credit card or prepaid card",
+    "Credit reporting, credit repair services, or other personal consumer reports",
+    "Debt collection",
+    "Money transfer, virtual currency, or money service",
+    "Mortgage",
+    "Other financial service",
+    "Payday loan, title loan, or personal loan",
+    "Student loan",
+    "Vehicle loan or lease"
+  ]
+}

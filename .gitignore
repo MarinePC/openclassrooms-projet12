@@ -1,0 +1,4 @@
+data/dataset.csv
+mission2/
+.DS_Store
+mission1/.env.local
